@@ -1,0 +1,69 @@
+{
+    "version": "2",
+    "templates": [
+        {
+            "categories": [
+                "Telegraf"
+            ],
+            "description": "Telegraf",
+            "env": [                    
+                {
+                    "default":"/hostfs",
+                    "lable":"HOST_MOUNT_PREFIX",
+                    "name":"HOST_MOUNT_PREFIX"
+                },
+                {
+                    "default":"/hostfs/etc",
+                    "lable":"HOST_ETC",
+                    "name":"HOST_ETC"
+                },
+                {
+                    "default":"/hostfs/proc",
+                    "lable":"HOST_PROC",
+                    "name":"HOST_PROC"
+                },
+                {
+                    "default":"/hostfs/sys",
+                    "lable":"HOST_SYS",
+                    "name":"HOST_SYS"
+                }
+            ],
+            "image": "mytelegraf:v1.0",
+            "logo": "https://github.com/Sheng-IoT/Portainer_Templates/blob/master/logo/mosquitto_logo.png?raw=true",
+            "name": "telegraf",
+            "platform": "linux",
+            "restart_policy": "unless-stopped",
+            "title": "Telegraf",
+            "type": 1,
+            "volumes": [
+                {
+                    "bind": "/home/rak/telegraf.conf",
+                    "container": "/etc/telegraf/telegraf.conf"
+                },
+                {
+                    "bind": "/sys",
+                    "container": "/rootfs/sys:ro"
+                },
+                {
+                    "bind": "/proc",
+                    "container": "/rootfs/proc:ro"
+                },
+                {
+                    "bind": "/etc",
+                    "container": "/rootfs/etc:ro"
+                },
+                {
+                    "bind": "/",
+                    "container": "/hostfs:ro"
+                },
+                {
+                    "bind": "/var/run/docker.sock",
+                    "container": "/var/run/docker.sock"
+                }
+            ],
+            "network":"bridge",
+            "note":""
+
+        }
+    ]
+}
