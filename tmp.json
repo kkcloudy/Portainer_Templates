@@ -9,22 +9,22 @@
             "env": [                    
                 {
                     "default":"/hostfs",
-                    "lable":"HOST_MOUNT_PREFIX",
+                    "label":"HOST_MOUNT_PREFIX",
                     "name":"HOST_MOUNT_PREFIX"
                 },
                 {
                     "default":"/hostfs/etc",
-                    "lable":"HOST_ETC",
+                    "label":"HOST_ETC",
                     "name":"HOST_ETC"
                 },
                 {
                     "default":"/hostfs/proc",
-                    "lable":"HOST_PROC",
+                    "label":"HOST_PROC",
                     "name":"HOST_PROC"
                 },
                 {
                     "default":"/hostfs/sys",
-                    "lable":"HOST_SYS",
+                    "label":"HOST_SYS",
                     "name":"HOST_SYS"
                 }
             ],
