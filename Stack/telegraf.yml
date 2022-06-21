@@ -1,0 +1,24 @@
+version: '3.9'
+
+services:
+    telegraf:
+        container_name: telegraf
+        image: "mytelegraf:v1.0"
+        #privileged: true
+        #user: telegraf
+        #group_add:
+        #  - 996
+
+        volumes:
+          - ./telegraf.conf:/etc/telegraf/telegraf.conf
+          - /sys:/rootfs/sys:ro
+          - /proc:/rootfs/proc:ro
+          - /etc:/rootfs/etc:ro
+          - /:/hostfs:ro
+          - /var/run/docker.sock:/var/run/docker.sock
+        environment:
+          HOST_MOUNT_PREFIX: /hostfs
+          HOST_ETC: /hostfs/etc
+          HOST_PROC: /hostfs/proc
+          HOST_SYS: /hostfs/sys
+        restart: unless-stopped
