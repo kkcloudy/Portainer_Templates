@@ -10,7 +10,7 @@ services:
         #  - 996
 
         volumes:
-          - ./telegraf.conf:/etc/telegraf/telegraf.conf
+          - /home/rak/telegraf.conf:/etc/telegraf/telegraf.conf
           - /sys:/rootfs/sys:ro
           - /proc:/rootfs/proc:ro
           - /etc:/rootfs/etc:ro
