@@ -3,7 +3,7 @@ version: '3.9'
 services:
     telegraf:
         container_name: telegraf
-        image: "mytelegraf:v2.0"
+        image: "xikai3344/mytelegraf:v2.0"
 
         volumes:
           - /etc/telegraf:/etc/telegraf:rw
