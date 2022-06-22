@@ -6,7 +6,7 @@ services:
         image: "mytelegraf:v2.0"
 
         volumes:
-          - /home/rak/telegraf.conf:/etc/telegraf/telegraf.conf
+          - /etc/telegraf:/etc/telegraf:rw
           - /sys:/rootfs/sys:ro
           - /proc:/rootfs/proc:ro
           - /etc:/rootfs/etc:ro
