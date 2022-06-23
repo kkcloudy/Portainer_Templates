@@ -38,9 +38,7 @@
                 "stackfile": "Stack/telegraf.yml",
                 "url": "https://github.com/kkcloudy/Portainer_Templates"
             },
-            "network":"bridge",
-            "note":"You must create telegraf.conf in the specified path '/home/rak' before you deploy"
-
+            "network":"bridge"    
         }
     ]
 }
