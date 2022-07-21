@@ -647,10 +647,10 @@
           "description": "Specifies Seafile admin user, default is 'me@example.com'."
         },
         {
-          "default": "asecret",
+          "default": "changeme",
           "label": "Seafile admin user password",
           "name": "SEAFILE_ADMIN_PASSWORD",
-          "description": "Seafile admin password, default is 'asecret'"
+          "description": "Seafile admin password, default is 'changeme'"
         },
         {
           "default": "false",
