@@ -5,11 +5,11 @@
             "categories": [
                 "nats"
             ],
-            "description": "nats",
+            "description": "NATS is a simple, secure and performant communications system for digital systems, services and devices.",
             "image": "nats",
             "interactive": true,
             "command": "--http_port 8222",
-            "logo": "https://influxdata.github.io/branding/img/downloads/influxdata-logo--symbol--pool.svg",
+            "logo": "https://github.com/kkcloudy/Portainer_Templates/blob/master/logo/nats_logo.jpg?raw=true",
             "name": "nats",
             "platform": "linux",
             "ports": [
