@@ -1,0 +1,20 @@
+{
+    "version": "2",
+    "templates": [
+        {
+            "categories": [
+                "nats"
+            ],
+            "description": "nats",
+            "image": "nats",
+            "command": "--http_port 8222",
+            "logo": "https://influxdata.github.io/branding/img/downloads/influxdata-logo--symbol--pool.svg",
+            "name": "nats",
+            "platform": "linux",
+            "restart_policy": "unless-stopped",
+            "title": "NATS",
+            "type": 1,
+            "network":"bridge"
+        }
+    ]
+}
