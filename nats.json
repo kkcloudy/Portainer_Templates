@@ -11,6 +11,10 @@
             "logo": "https://influxdata.github.io/branding/img/downloads/influxdata-logo--symbol--pool.svg",
             "name": "nats",
             "platform": "linux",
+            "ports": [
+                "4222:4222",
+                "8222:8222"
+              ],
             "restart_policy": "unless-stopped",
             "title": "NATS",
             "type": 1,
