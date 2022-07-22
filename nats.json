@@ -7,6 +7,7 @@
             ],
             "description": "nats",
             "image": "nats",
+            "interactive": true,
             "command": "--http_port 8222",
             "logo": "https://influxdata.github.io/branding/img/downloads/influxdata-logo--symbol--pool.svg",
             "name": "nats",
@@ -14,7 +15,7 @@
             "ports": [
                 "4222:4222/tcp",
                 "8222:8222/tcp"
-              ],
+            ],
             "restart_policy": "unless-stopped",
             "title": "NATS",
             "type": 1,
