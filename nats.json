@@ -12,8 +12,8 @@
             "name": "nats",
             "platform": "linux",
             "ports": [
-                "4222:4222",
-                "8222:8222"
+                "4222:4222/tcp",
+                "8222:8222/tcp"
               ],
             "restart_policy": "unless-stopped",
             "title": "NATS",
