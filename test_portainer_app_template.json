@@ -684,7 +684,6 @@
         "url": "https://github.com/Sheng-IoT/Portainer_Templates"
       },
       "title": "Seafile",
-      "network": "bridge",
       "type": 3,
       "note": "Browse to <a href='http://{host-ip}:<9080'>http://{host-ip}:9080</a> to access the web interface, or change the external port number to your customised port number. Check <a href='https://manual.seafile.com/docker/deploy_seafile_with_docker/'>Seafile Community Installation Guide</a> for more details."
     },
