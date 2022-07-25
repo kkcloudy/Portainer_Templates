@@ -634,13 +634,6 @@
           "description": "Requested, set the root's password of MySQL service"
         },
         {
-          "default": "9080",
-          "label": "Seafile's frontend external port",
-          "name": "external_port ",
-          "description": "Frontend external port bind to Seafile service's 80 port. Browse to http://{host-ip}:<Frontend external port> to access the web interface."
-        },
-
-        {
           "default": "me@example.com",
           "label": "Seafile admin user email",
           "name": "SEAFILE_ADMIN_EMAIL",
@@ -656,7 +649,7 @@
           "default": "false",
           "label": "Whether to use https or not",
           "name": "SEAFILE_SERVER_LETSENCRYPT",
-          "description": "Whether to use https or not",
+          "description": "Whether to use https or not. If https is enabled, please publish port 443 manually",
           "select": [
             {
               "text": "Enable",
