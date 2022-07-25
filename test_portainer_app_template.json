@@ -678,7 +678,7 @@
       },
       "title": "Seafile",
       "type": 3,
-      "note": "Browse to <a href='http://{host-ip}:<9080'>http://{host-ip}:9080</a> to access the web interface, or change the external port number to your customised port number. Check <a href='https://manual.seafile.com/docker/deploy_seafile_with_docker/'>Seafile Community Installation Guide</a> for more details."
+      "note": "Browse to <a href='http://{host-ip}:<80'>http://{host-ip}:80</a> to access the web interface. HTTPS is not enabled by default.<br>After login, please go to <b>System admin</b> on top right, then navigate to <b>Settings</b>, and change the <b>FILE_SERVER_ROOT</b> URL to http://{host-ip}/seafhttp.<br>Check <a href='https://manual.seafile.com/docker/deploy_seafile_with_docker/'>Seafile Community Installation Guide</a> for more details."
     },
     {
       "categories": [
