@@ -637,7 +637,7 @@
       "platform": "linux",
       "repository": {
         "stackfile": "Stack/tailscale.yml",
-        "url": "https://github.com/RAKWireless/portainer-templates"
+        "url": "https://github.com/Sheng-IoT/Portainer_Templates"
       },
       "title": "Tailscale",
       "type": 3,
