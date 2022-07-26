@@ -5,9 +5,7 @@ services:
   tailscaled:
     #image: sheng2216/tailscale:1.0
     build:
-      context: ./dockerfile/tailscale\:1.0/Dockerfile 
-      args:
-        version: v1.26.0
+      context: ./dockerfile/tailscale/ 
       dockerfile: Dockerfile
     container_name: Tailscaled
     restart: unless-stopped
