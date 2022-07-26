@@ -17,7 +17,7 @@
                 "8222:8222/tcp"
             ],
             "restart_policy": "unless-stopped",
-            "title": "NATS",
+            "title": "NATS Server",
             "type": 1,
             "network":"bridge"
         }
