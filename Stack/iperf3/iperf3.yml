@@ -5,4 +5,8 @@ services:
     restart: unless-stopped
     ports:
       - "${port}:5201"
+    environment:
+      - TZ=${TZ}
+      - PUID=${PUID}
+      - PGID=${PGID}
     command: "${command}"
