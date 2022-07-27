@@ -1,0 +1,8 @@
+version: '3.8'
+services:
+  iperf3:
+    image: taoyou/iperf3-alpine:latest
+    restart: unless-stopped
+    ports:
+      - "${port}:5201"
+    command: "${command}"
