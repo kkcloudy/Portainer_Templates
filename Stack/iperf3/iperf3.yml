@@ -4,8 +4,8 @@ services:
     image: taoyou/iperf3-alpine:latest
     restart: unless-stopped
     ports:
-      - "{port}:5201/udp"
-      - "{port}:5201/tcp"
+      - ${port}:5201/udp
+      - ${port}:5201/tcp
     environment:
       - TZ=${TZ}
       - PUID=${PUID}
