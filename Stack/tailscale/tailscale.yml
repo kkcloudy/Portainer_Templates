@@ -7,8 +7,8 @@ services:
     build:
       context: ./
       dockerfile: Dockerfile
-      args: 
-        version: ${version}   #v1.26.0
+#      args: 
+#        version: ${version}   #v1.26.0
     container_name: Tailscaled
     restart: unless-stopped
     network_mode: host
