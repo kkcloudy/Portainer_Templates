@@ -11,4 +11,4 @@ services:
       - PUID=${PUID}
       - PGID=${PGID}
     command: "${command}"
-    network: "bridge"
+    network_mode: "bridge"
