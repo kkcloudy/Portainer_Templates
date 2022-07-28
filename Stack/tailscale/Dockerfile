@@ -1,4 +1,5 @@
-#ARG base_version=${version}
+### Define the base image version
+ARG version=v1.26.0
 
 #### Use tailscale/tailscale:v1.26.0 as the base
 FROM tailscale/tailscale:${version} AS base
