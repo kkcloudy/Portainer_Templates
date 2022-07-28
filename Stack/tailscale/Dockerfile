@@ -1,4 +1,4 @@
-ARG ${base_version}=v1.29
+ARG base_version=${version}
 
 #### Use tailscale/tailscale:v1.26.0 as the base
 FROM tailscale/tailscale:${base_version} AS base
