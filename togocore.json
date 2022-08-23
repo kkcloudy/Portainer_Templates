@@ -7,7 +7,7 @@
           ],
         "description": "TagoCore is a free, fast, and open-source IoT platform for edge computing",
         "image": "tcore:v1",
-        "logo": "https://raw.githubusercontent.com/RAKWireless/portainer-templates/master/logo/gateway_logo.png",
+        "logo": "https://raw.githubusercontent.com/RAKWireless/portainer-templates/master/logo/tagocore_logo.png",
         "name": "TogoCore",
         "platform": "linux",
         "ports": [
@@ -16,7 +16,8 @@
         "restart_policy": "unless-stopped",
         "title": "",
         "type": 1,
-        "network": "bridge"
+        "network": "bridge",
+        "note": "Browse to <a href='http://{host-ip}:<8080'>http://{host-ip}:8080</a> to access the web interface."
       }
     ]
 }
