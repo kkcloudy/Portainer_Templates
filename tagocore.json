@@ -14,11 +14,7 @@
         ],
         "restart_policy": "unless-stopped",
         "title": "TagoCore",
-        "repository": {
-          "stackfile": "Stack/tagocore/tagocore.yml",
-          "url": "https://github.com/kkcloudy/Portainer_Templates"
-        },
-
+        "image": "xikai3344/tagocore:v1",
         "type": 1,
         "network": "bridge",
         "note": "Browse to <a href='http://{host-ip}:<8080'>http://{host-ip}:8080</a> to access the web interface."
