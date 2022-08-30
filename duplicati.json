@@ -26,13 +26,13 @@
             "description": "Path to store local backups."
           }
         ],
-        "logo": "https://raw.githubusercontent.com/kkcloudy/Portainer_Templates/master/logo/dumplicati_logo.png",
-        "name": "Dumplicati",
+        "logo": "https://raw.githubusercontent.com/kkcloudy/Portainer_Templates/master/logo/duplicati_logo.png",
+        "name": "Duplicati",
         "platform": "linux",
         "restart_policy": "unless-stopped",
-        "title": "Dumplicati",
+        "title": "Duplicati",
         "repository": {
-          "stackfile": "Stack/dumplicati.yml",
+          "stackfile": "Stack/duplicati.yml",
           "url": "https://github.com/kkcloudy/Portainer_Templates"
         },
         "type": 3,
