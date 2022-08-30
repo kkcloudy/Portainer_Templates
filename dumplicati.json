@@ -1,0 +1,40 @@
+{
+    "version": "2",
+    "templates": [
+      {
+        "categories": [
+            "Other"
+          ],
+        "description": "TagoCore is a free, fast, and open-source IoT platform for edge computing.",
+        "env": [
+          {
+            "default": "/opt/config",
+            "label": "CONFIG",
+            "name": "CONFIG"
+          },
+          {
+            "default": "/opt/source",
+            "label": "SOURCE",
+            "name": "SOURCE"
+          },
+          {
+            "default": "/opt/backups",
+            "label": "BACKUPS",
+            "name": "BACKUPS"
+          }
+        ],
+        "logo": "https://raw.githubusercontent.com/kkcloudy/Portainer_Templates/master/logo/tagocore_logo.png",
+        "name": "TogoCore",
+        "platform": "linux",
+        "restart_policy": "unless-stopped",
+        "title": "Dumplicati",
+        "repository": {
+          "stackfile": "Stack/dumplicati.yml",
+          "url": "https://github.com/kkcloudy/Portainer_Templates"
+        },
+        "type": 3,
+        "network": "bridge",
+        "note": "Browse to <a href='http://{host-ip}:<8080'>http://{host-ip}:8200</a> to access the web interface."
+      }
+    ]
+}
