@@ -3,28 +3,31 @@
     "templates": [
       {
         "categories": [
-            "Other"
+            "Backup"
           ],
-        "description": "TagoCore is a free, fast, and open-source IoT platform for edge computing.",
+        "description": "free backup software to store encrypted backups online",
         "env": [
           {
             "default": "/opt/config",
             "label": "CONFIG",
-            "name": "CONFIG"
+            "name": "CONFIG",
+            "description": "Contains all relevant configuration files."
           },
           {
             "default": "/opt/source",
             "label": "SOURCE",
-            "name": "SOURCE"
+            "name": "SOURCE",
+            "description":"Path to source for files to backup."
           },
           {
             "default": "/opt/backups",
             "label": "BACKUPS",
-            "name": "BACKUPS"
+            "name": "BACKUPS",
+            "description": "Path to store local backups."
           }
         ],
-        "logo": "https://raw.githubusercontent.com/kkcloudy/Portainer_Templates/master/logo/tagocore_logo.png",
-        "name": "TogoCore",
+        "logo": "https://raw.githubusercontent.com/kkcloudy/Portainer_Templates/master/logo/dumplicati_logo.png",
+        "name": "Dumplicati",
         "platform": "linux",
         "restart_policy": "unless-stopped",
         "title": "Dumplicati",
@@ -34,7 +37,7 @@
         },
         "type": 3,
         "network": "bridge",
-        "note": "Browse to <a href='http://{host-ip}:<8080'>http://{host-ip}:8200</a> to access the web interface."
+        "note": "Browse to <a href='http://{host-ip}:<8200'>http://{host-ip}:8200</a> to access the web interface."
       }
     ]
 }
