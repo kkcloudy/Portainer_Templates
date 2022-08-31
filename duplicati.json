@@ -8,16 +8,19 @@
         "description": "free backup software to store encrypted backups online",
         "env": [
           {
+            "default": "/home/rak/config",
             "label": "CONFIG",
             "name": "CONFIG",
             "description": "Contains all relevant configuration files."
           },
           {
+            "default": "/home/rak/source",
             "label": "SOURCE",
             "name": "SOURCE",
             "description":"Path to source for files to backup."
           },
           {
+            "default": "/home/rak/backups",
             "label": "BACKUPS",
             "name": "BACKUPS",
             "description": "Path to store local backups."
