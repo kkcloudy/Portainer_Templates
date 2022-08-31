@@ -1,0 +1,51 @@
+{
+    "version": "2",
+    "templates": [
+        {
+            "type": 1,
+            "title": "Homeassistant",
+            "name": "Homeassistant",
+            "note": "Browse to <a href='http://{host-ip}:8123'>http://{host-ip}:8123</a> to access the web interface.<br>Check <a href='https://www.home-assistant.io/installation/linux#install-home-assistant-container'>Home Assistant container documentation</a> for more details.<br>Path to Home Assistant's configuration on the host is: <b>/etc/homeassistant/config</b>.",
+            "description": "Open source home automation that puts local control and privacy first. Powered by a worldwide community of tinkerers and DIY enthusiasts. Perfect to run on a Raspberry Pi or a local server.",
+            "categories": [
+                "Home Automation"
+            ],
+            "platform": "linux",
+            "logo": "https://github.com/home-assistant/home-assistant.io/raw/next/source/images/favicon-192x192-full.png",
+            "image": "homeassistant/home-assistant:stable",
+            "network": "host",
+            "env": [
+                {
+                    "default": "1000",
+                    "label": "PUID",
+                    "name": "PUID"
+                  },
+                  {
+                    "default": "100",
+                    "label": "PGID",
+                    "name": "PGID"
+                  },
+                  {
+                    "default": "Europe/London",
+                    "label": "Time Zone",
+                    "name": "TZ"
+                  }
+            ],
+            "ports": [
+                "8123:8123/tcp"
+            ],
+            "volumes": [
+                {
+                    "container": "/config",
+                    "bind": "/etc/homeassistant/config"
+                },
+                {
+                    "container": "/etc/localtime",
+                    "bind": "/etc/localtime"
+
+                }
+            ],
+            "restart_policy": "unless-stopped"
+        }
+    ]
+}
