@@ -8,19 +8,16 @@
         "description": "free backup software to store encrypted backups online",
         "env": [
           {
-            "default": "/opt/config",
             "label": "CONFIG",
             "name": "CONFIG",
             "description": "Contains all relevant configuration files."
           },
           {
-            "default": "/opt/source",
             "label": "SOURCE",
             "name": "SOURCE",
             "description":"Path to source for files to backup."
           },
           {
-            "default": "/opt/backups",
             "label": "BACKUPS",
             "name": "BACKUPS",
             "description": "Path to store local backups."
