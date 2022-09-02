@@ -5,11 +5,11 @@
             "categories": [
                 "Other"
             ],
-            "description": "AdGuard Home is a network-wide software for blocking ads & tracking.",
-            "image": "adguard/adguardhome:latest",
+            "description": "A DNS sinkhole that protects your devices from unwanted content without installing any client-side software",
+            "image": "adguard/adguardhome",
             "logo": "https://raw.githubusercontent.com/SelfhostedPro/selfhosted_templates/master/Images/pihole.png",
-            "name": "AdguardHome",
-            "note": "Browse to <a herf='http://{host-ip}:3000'>http://{host-ip}:3000</a> to access the web interface.",
+            "name": "pihole",
+            "note": "Browse to <a herf='http://{host-ip}/admin/'>http://{host-ip}/admin/</a> to access the web interface.<br>Check <a href='https://github.com/pi-hole/docker-pi-hole'>Docker Pi-hole quick start guide</a> for more details.<br>The default web password is <b>changeme</b>",
             "platform": "linux",
             "env": [
                 {
@@ -26,17 +26,31 @@
                     "default": "Europe/London",
                     "label": "Time Zone",
                     "name": "TZ"
-                }  
+                },
+                { 
+                    "default": "changeme",
+                    "label": "Web password",
+                    "name": "WEBPASSWORD"
+                }
             ],
             "ports": [
                 "53:53/tcp",
                 "53:53/udp",
-                "3000:3000/tcp"
-               
+                "80:80/tcp"
             ],
             "restart_policy": "unless-stopped",
-            "title": "AdguardHome",
-            "type": 1
+            "title": "Pi-Hole",
+            "type": 1,
+            "volumes": [
+                {
+                    "container": "/etc/pihole",
+                    "bind": "/etc/pihole"
+                },
+                {
+                    "container": "/etc/dnsmasq.d",
+                    "bind": "/etc/dnsmasq.d"
+                }
+            ]
         }
     ]
 }
