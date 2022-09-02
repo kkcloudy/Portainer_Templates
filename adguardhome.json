@@ -39,7 +39,6 @@
             "restart_policy": "unless-stopped",
             "title": "AdguardHome",
             "type": 1
-            ]
         }
     ]
 }
