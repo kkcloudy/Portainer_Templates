@@ -26,6 +26,11 @@
                     "default": "Europe/London",
                     "label": "Time Zone",
                     "name": "TZ"
+                },
+                { 
+                    "default": "changeme",
+                    "label": "Web password"
+                    "name": "WEBPASSWORD
                 }
             ],
             "ports": [
