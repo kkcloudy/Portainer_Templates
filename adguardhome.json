@@ -38,16 +38,7 @@
             ],
             "restart_policy": "unless-stopped",
             "title": "AdguardHome",
-            "type": 1,
-            "volumes": [
-                {
-                    "container": "/opt/adguardhome/work",
-                    "bind": "/my/own/workdir"
-                },
-                {
-                    "container": "/opt/adguardhome/conf",
-                    "bind": "/my/own/confdir"
-                }
+            "type": 1
             ]
         }
     ]
