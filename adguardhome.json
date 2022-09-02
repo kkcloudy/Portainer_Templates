@@ -41,14 +41,14 @@
             "restart_policy": "unless-stopped",
             "title": "Pi-Hole",
             "type": 1,
-            "volumes": [
+             "volumes": [
                 {
-                    "container": "/etc/pihole",
-                    "bind": "/etc/pihole"
+                    "container": "/opt/adguardhome/work",
+                    "bind": "/my/own/workdir"
                 },
                 {
-                    "container": "/etc/dnsmasq.d",
-                    "bind": "/etc/dnsmasq.d"
+                    "container": "/opt/adguardhome/conf",
+                    "bind": "/my/own/confdir"
                 }
             ]
         }
