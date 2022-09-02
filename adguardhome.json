@@ -1,0 +1,52 @@
+{
+    "version": "2",
+    "templates": [
+        {
+            "categories": [
+                "Other"
+            ],
+            "description": "A DNS sinkhole that protects your devices from unwanted content without installing any client-side software",
+            "image": "adguard/adguardhome",
+            "logo": "https://raw.githubusercontent.com/SelfhostedPro/selfhosted_templates/master/Images/pihole.png",
+            "name": "adguardhome",
+            "note": "Browse to <a herf='http://{host-ip}/admin/'>http://{host-ip}/admin/</a> to access the web interface.<br>Check <a href='https://github.com/pi-hole/docker-pi-hole'>Docker Pi-hole quick start guide</a> for more details.<br>The default web password is <b>changeme</b>",
+            "platform": "linux",
+            "env": [
+                {
+                    "default": "1000",
+                    "label": "PUID",
+                    "name": "PUID"
+                },
+                {
+                    "default": "100",
+                    "label": "PGID",
+                    "name": "PGID"
+                },
+                {
+                    "default": "Europe/London",
+                    "label": "Time Zone",
+                    "name": "TZ"
+                }
+            ],
+            "ports": [
+                "53:53/tcp",
+                "53:53/udp",
+                "80:80/tcp",
+                "3000:3000/tcp"
+            ],
+            "restart_policy": "unless-stopped",
+            "title": "AdguardHome",
+            "type": 1,
+            "volumes": [
+                {
+                    "container": "/opt/adguardhome/work",
+                    "bind": "/opt/adguardhome/work"
+                },
+                {
+                    "container": "/opt/adguardhome/conf",
+                    "bind": "/opt/adguardhome/conf"
+                }
+            ]
+        }
+    ]
+}
