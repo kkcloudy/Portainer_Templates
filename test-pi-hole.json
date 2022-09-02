@@ -29,7 +29,7 @@
                 },
                 { 
                     "default": "changeme",
-                    "label": "Web password"
+                    "label": "Web password",
                     "name": "WEBPASSWORD"
                 }
             ],
