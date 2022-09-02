@@ -25,11 +25,11 @@
             "volumes": [
                 {
                     "container": "/opt/adguardhome/work",
-                    "bind": "/opt/adguardhome/work"
+                    "bind": "/my/own/workdir"
                 },
                 {
                     "container": "/opt/adguardhome/conf",
-                    "bind": "/opt/adguardhome/conf"
+                    "bind": "/my/own/confdir"
                 }
             ]
         }
