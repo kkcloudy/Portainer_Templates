@@ -11,6 +11,23 @@
             "name": "AdguardHome",
             "note": "Browse to <a herf='http://{host-ip}:3000'>http://{host-ip}:3000</a> to access the web interface.",
             "platform": "linux",
+            "env": [
+                {
+                    "default": "1000",
+                    "label": "PUID",
+                    "name": "PUID"
+                },
+                {
+                    "default": "100",
+                    "label": "PGID",
+                    "name": "PGID"
+                },
+                {
+                    "default": "Europe/London",
+                    "label": "Time Zone",
+                    "name": "TZ"
+                }  
+            ],
             "ports": [
                 "53:53/tcp",
                 "53:53/udp",
