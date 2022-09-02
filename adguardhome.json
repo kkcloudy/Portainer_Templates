@@ -8,7 +8,7 @@
             "description": "A DNS sinkhole that protects your devices from unwanted content without installing any client-side software",
             "image": "adguard/adguardhome",
             "logo": "https://raw.githubusercontent.com/SelfhostedPro/selfhosted_templates/master/Images/pihole.png",
-            "name": "pihole",
+            "name": "adguardhome",
             "note": "Browse to <a herf='http://{host-ip}/admin/'>http://{host-ip}/admin/</a> to access the web interface.<br>Check <a href='https://github.com/pi-hole/docker-pi-hole'>Docker Pi-hole quick start guide</a> for more details.<br>The default web password is <b>changeme</b>",
             "platform": "linux",
             "env": [
