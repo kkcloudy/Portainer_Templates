@@ -5,38 +5,19 @@
             "categories": [
                 "Other"
             ],
-            "description": "A DNS sinkhole that protects your devices from unwanted content without installing any client-side software",
+            "description": "AdGuard Home is a network-wide software for blocking ads & tracking.",
             "image": "adguard/adguardhome",
             "logo": "https://raw.githubusercontent.com/SelfhostedPro/selfhosted_templates/master/Images/pihole.png",
             "name": "adguardhome",
-            "note": "Browse to <a herf='http://{host-ip}/admin/'>http://{host-ip}/admin/</a> to access the web interface.<br>Check <a href='https://github.com/pi-hole/docker-pi-hole'>Docker Pi-hole quick start guide</a> for more details.<br>The default web password is <b>changeme</b>",
+            "note": "Browse to <a herf='http://{host-ip}:3000'>http://{host-ip}:3000</a> to access the web interface.",
             "platform": "linux",
-            "env": [
-                {
-                    "default": "1000",
-                    "label": "PUID",
-                    "name": "PUID"
-                },
-                {
-                    "default": "100",
-                    "label": "PGID",
-                    "name": "PGID"
-                },
-                {
-                    "default": "Europe/London",
-                    "label": "Time Zone",
-                    "name": "TZ"
-                },
-                { 
-                    "default": "changeme",
-                    "label": "Web password",
-                    "name": "WEBPASSWORD"
-                }
-            ],
             "ports": [
                 "53:53/tcp",
                 "53:53/udp",
-                "80:80/tcp"
+                "3000:3000/tcp",
+                "80:80/tcp",
+                "433:433/tcp",
+                "433:433/upd"
             ],
             "restart_policy": "unless-stopped",
             "title": "Pi-Hole",
