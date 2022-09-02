@@ -30,7 +30,7 @@
                 { 
                     "default": "changeme",
                     "label": "Web password"
-                    "name": "WEBPASSWORD
+                    "name": "WEBPASSWORD"
                 }
             ],
             "ports": [
