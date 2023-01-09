@@ -15,7 +15,7 @@
             "title": "Portainer",
             "type": 1,
             "network":"bridge",
-            "ports": ["8000:8001/tcp", "9443:9444/tcp"]
+            "ports": ["8001:8000/tcp", "9445:9443/tcp"]
         }
     ]
 }
