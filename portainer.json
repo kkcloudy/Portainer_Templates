@@ -16,17 +16,6 @@
             "type": 1,
             "network":"bridge",
             "ports": ["8001:8000/tcp", "9445:9443/tcp"],
-            "volumes": [
-                {
-                    "bind": "/var/run/docker.sock",
-                    "container": "/var/run/docker.sock"
-                },
-                {
-                    "bind": "portainer_data",
-                    "container": "/data"
-                }
-                
-            ],
             "env": [
                 {
                     "default": "1000",
