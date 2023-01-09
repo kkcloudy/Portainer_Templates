@@ -7,7 +7,7 @@
             ],
             "description": "My Portainer.",
             "image": "portainer/portainer-ce:2.16.2",
-            "command": "--admin-password '$$2y$$05$$CamDlWaqdhRQvy1AuOZlY.4QYi/GptU6lDruXD0YiYiwQljGJmamC'",
+            "command": "--admin-password '$2y$05$CamDlWaqdhRQvy1AuOZlY.4QYi/GptU6lDruXD0YiYiwQljGJmamC'",
             "logo": "https://influxdata.github.io/branding/img/downloads/influxdata-logo--symbol--pool.svg",
             "name": "myportainer",
             "platform": "linux",
