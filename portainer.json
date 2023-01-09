@@ -14,7 +14,8 @@
             "restart_policy": "unless-stopped",
             "title": "Portainer",
             "type": 1,
-            "network":"bridge"
+            "network":"bridge",
+            "ports": ["8000:8000/tcp", "9445:9443/tcp"]
         }
     ]
 }
