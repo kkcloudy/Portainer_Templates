@@ -6,7 +6,6 @@
                 "docker"
             ],
             "description": "My Portainer.",
-            "command": "--admin-password '$$2y$$05$$CamDlWaqdhRQvy1AuOZlY.4QYi/GptU6lDruXD0YiYiwQljGJmamC'",
             "image": "portainer/portainer-ce:2.16.2",
             "logo": "https://influxdata.github.io/branding/img/downloads/influxdata-logo--symbol--pool.svg",
             "name": "myportainer",
