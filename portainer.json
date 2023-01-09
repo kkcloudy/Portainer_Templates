@@ -15,19 +15,7 @@
             "title": "Portainer",
             "type": 1,
             "network":"bridge",
-            "ports": ["8001:8000/tcp", "9445:9443/tcp"],
-            "env": [
-                {
-                    "default": "1000",
-                    "label": "PUID",
-                    "name": "PUID"
-                },
-                {
-                    "default": "100",
-                    "label": "PGID",
-                    "name": "PGID"
-                }
-            ]
+            "ports": ["8001:8000/tcp", "9445:9443/tcp"]
         }
     ]
 }
