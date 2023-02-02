@@ -1,0 +1,32 @@
+{
+    "version": "2",
+    "templates": [
+        {
+            "categories": [
+                "BACnet APP"
+            ],
+            "description": "A generic BACnet IP to MQTT bidirectional python service.",
+            "env": [                    
+                {
+                    "label":"BACNET_BRIDGE_CONFIG",
+                    "name":"BACNET_BRIDGE_CONFIG"
+                },
+                {
+                    "label":"MQTT_BROKER_CONFIG",
+                    "name":"MQTT_BROKER_CONFIG"
+                }
+              
+            ],
+            "logo": "https://influxdata.github.io/branding/img/downloads/influxdata-logo--symbol--pool.svg",
+            "name": "bacnet-bridge",
+            "platform": "linux",
+            "restart_policy": "unless-stopped",
+            "title": "BACnet Bridge",
+            "type": 3,
+            "repository": {
+                "stackfile": "Stack/bacnet-bridge.yml",
+                "url": "https://github.com/kkcloudy/Portainer_Templates"
+            }
+        }
+    ]
+}
